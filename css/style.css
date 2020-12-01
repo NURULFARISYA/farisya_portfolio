@@ -1,0 +1,579 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Josefin+Sans:ital,wght@1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+p{
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 20px;
+    color: black;
+}
+
+h1.title{
+    margin-bottom: 20px;
+    color: black;
+    font-family: 'Allura', cursive;
+    font-size: 38px;
+    word-spacing: 25px;
+    letter-spacing: 5px;
+}
+
+.main_container{
+    position: relative;
+}
+
+/* Navigation bar */
+.navbar{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-items: center;
+    position: absolute;
+    font-weight: bold;
+}
+
+.logo a{
+    font-family: 'Allura', cursive;
+    font-size: 32px;
+    color: tomato;
+}
+
+.navbar .navbar_items ul{
+    display: flex;
+}
+
+.navbar .navbar_items ul li{
+    text-transform: uppercase;
+    margin: 0 10px;
+    font-style: oblique;
+    font-size: 15px;
+}
+
+.navbar .navbar_items ul li a{
+    color: black;
+}
+
+/* Banner Image */
+.banner_image{
+    background: url("../image/background.jpg") no-repeat top center;
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner_content{
+    text-align: center;
+    color: black;
+}
+
+.banner_content h1{
+    text-transform: uppercase;
+    line-height: 40px;
+    margin-bottom: 15px;
+    font-size: 45px;
+}
+
+.banner_content h1 span{
+    color: tomato;
+}
+
+.banner_content p{
+    text-transform: initial;
+    font-size: 25px;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+/* About me */
+.about{
+    padding: 3% 10%;
+    text-align: center;
+    margin-top: 0;
+    color: black;
+    background: url("../image/bg1.jpg");
+    background-size: cover;
+}
+.ps img{
+    border-radius: 50px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+/* Skills */
+.skills{
+    padding: 3% 10%;
+    text-align: center;
+    background: url("../image/bg2.jpg");  
+    background-size: cover;
+
+}
+.wrap{
+    max-width: 60%;
+    margin: 0px auto 0;
+}
+
+.bar{
+    color: black;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 16px;
+    position: relative;
+}
+
+.bar{
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.bar span{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 25px;
+    background: black;
+    border-radius: 50px;
+}
+.bar span:before{
+    position: absolute;
+    content: '';
+    top: 6px;
+    left: 5px;
+    width: 80%;
+    height: 50%;
+    background: linear-gradient(to left, snow, slategray);
+    border-radius: 50px;
+    animation: bar 4s ease;
+}
+@keyframes bar{
+    from{
+        width: 0;
+    }
+}
+.bar:nth-child(1) span:before{
+    width: 99%
+}
+.bar:nth-child(2) span:before{
+    width: 85%
+}
+.bar:nth-child(3) span:before{
+    width: 70%
+}
+.bar:nth-child(4) span:before{
+    width: 65%
+}
+.bar:nth-child(5) span:before{
+    width: 65%
+}
+abbr{
+    width: 50px;
+    display: inline-block;
+    height: 35px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 35px;
+    position: absolute;
+    top: 54px;
+    z-index: 1;
+    background: linear-gradient(to left, snow, slategray);
+    box-shadow: 0 5px 2px snow, 0 5px 20px slategray;
+    animation: count 4s ease;
+}
+@keyframes count {
+    from{
+        left: 0%;
+    }
+}
+
+.bar:nth-child(1) abbr{
+    left: 99%;
+}
+.bar:nth-child(2) abbr{
+    left: 85%;
+}
+.bar:nth-child(3) abbr{
+    left: 70%;
+}
+.bar:nth-child(4) abbr{
+    left: 65%;
+}
+.bar:nth-child(5) abbr{
+    left: 65%;
+}
+
+/* Hobbies */
+.hobbies{
+    padding: 3% 10%;
+    text-align: center;
+    background: url("../image/bg3.jpg");
+}
+
+.diff_hobbies{
+    display: flex;
+    margin-top: 35px;
+    justify-content: space-between;
+}
+
+.diff_hobbies h3{
+    margin-bottom: 15px;
+}
+
+.diff_hobbies_items{
+    width: 30%;
+}
+
+.diff_hobbies_items img{
+    width: 100%;
+    margin-bottom: 25px;
+    border-radius: 50px;
+}
+
+.diff_hobbies_items img:hover{
+    opacity: .5;
+    transition: .9s;
+}
+
+.diff_hobbies_items h3{
+    color: tomato;
+}
+
+/* Passion */
+.passion{
+    text-align: center;
+    background: url("../image/bg4.jpg");
+    background-size: cover;
+}
+
+.passion .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.passion-heading{
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 0;
+    margin-bottom: 8px;
+    margin-top: 45px;
+}
+.passion-heading h1{
+    font-size: 38px;
+    font-family: 'Allura', cursive;
+    margin-bottom: 15px;
+    line-height: 40px;
+}
+
+.passion-heading p{
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 15px;
+    line-height: 15px;
+}
+
+/* Fav Quotes */
+.fav{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: url("../image/bg3.jpg");
+    background-size: cover;
+}
+
+.quote{
+    width: 1400px;
+    min-height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.fav h1{
+    font-size: 38px;
+    font-family: 'Allura', cursive;
+    line-height: 40px;
+    text-align: center;
+}
+.quote .box{
+    position: relative;
+    width: 360px;
+    height: 300px;
+    background: #fff;
+    overflow: hidden;
+    transition: 0.5s;
+    z-index: 2;
+    box-sizing: border-box;
+    padding: 30px;
+    box-shadow: -10px 25px 50px rgba(0,0,0,.2);
+}
+
+.quote .box:hover{
+    box-shadow: -20px 50px 100px rgba(0,0,0,.5);
+}
+
+.quote .box p{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+.quote .box:hover p{
+    color: #fff;
+
+}
+
+.quote .box h2{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.quote .box:hover h2{
+    color: #fff;
+    
+}
+
+.quote .box.box1:hover{
+    opacity: 1;
+    background: linear-gradient(#03A9F4,#E91E63);
+}
+
+.quote .box.box2:hover{
+    opacity: 1;
+    background: linear-gradient(#FFC107, #19fd36);
+}
+
+.quote .box.box3:hover{
+    opacity: 1;
+    background: linear-gradient(#FFC107,#E91E63);
+}
+
+.quote .box::after{
+    content: url(../image/quote.png);
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    opacity: .1;
+    background: rgba(255,255,255,0.4);
+    pointer-events: none;
+}
+
+/* Gallery */
+.gallery{
+    background: url("../image/bg3.jpg");
+}
+.gallery h1{
+    font-size: 38px;
+    font-family: 'Allura', cursive;
+    line-height: 40px;
+    text-align: center;
+    padding: 5% 10%;
+}
+
+.container{
+    width: 100%;
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template: "1fr 1fr 1fr 1fr 1fr" 33.33vh
+                   "1fr 1fr 1fr 1fr 1fr" 33.33vh
+                   "1fr 1fr 1fr 1fr 1fr" 33.33vh;
+}
+
+.container .box{
+    position: relative;
+    background: #ccc;
+}
+
+.container .box img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .box.a,
+.container .box.g{
+    grid-row: span 2;
+}
+
+.container .box.b,
+.container .box.f,
+.container .box.h,
+.container .box.i{
+    grid-column: span 2;
+}
+.container .box:hover{
+    opacity: .5;
+    transition: .9s;
+}
+@media (max-width: 991px){
+    .container{
+        grid-template: "1fr 1fr 1fr" 250px
+                       "1fr 1fr 1fr" 250px
+                       "1fr 1fr 1fr" 250px
+                       "1fr 1fr 1fr" 250px
+                       "1fr 1fr 1fr" 250px;
+    }
+}
+
+@media (max-width: 768px){
+    .container{
+        grid-template: "1fr 1fr" 200px
+                       "1fr 1fr" 200px
+                       "1fr 1fr" 200px
+                       "1fr 1fr" 200px
+                       "1fr 1fr" 200px
+                       "1fr 1fr" 200px
+                       "1fr 1fr" 200px;
+    }
+}
+
+.container .box.h{
+    grid-column: span 1;
+}
+
+/* Contact */
+.contact{
+    background: url("../image/bg3.jpg");
+}
+
+.contact h1{
+    font-size: 38px;
+    font-family: 'Allura', cursive;
+    line-height: 40px;
+    text-align: center;
+    padding: 5% 10%;
+}
+
+.social-menu ul{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    padding: 0;
+    margin: 0;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+}
+
+.social-menu ul li{
+    list-style: none;
+    margin: 0 15px;
+}
+
+.social-menu ul li .fa{
+    font-size: 30px;
+    line-height: 60px;
+    transition: .6s;
+    color: black;
+}
+
+.social-menu ul li .fa:hover{
+    color: white;
+}
+
+.social-menu ul li a{
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+
+.social-menu ul li a:hover{
+    transform: translate(0, -10px);
+}
+
+.social-menu ul li:nth-child(1) a:hover{
+    background-color: rgb(228,64,95);
+}
+.social-menu ul li:nth-child(2) a:hover{
+    background-color: rgb(85,172,238);
+}
+.social-menu ul li:nth-child(3) a:hover{
+    background-color: rgb(221,75,57);
+}
+.social-menu ul li:nth-child(4) a:hover{
+    background-color: rgb(19,20,24);
+}
+
+/* Footer */
+.footer{
+    width: 100%;
+    text-align: center;
+    background: #444444;
+    padding: 20px 0;
+}
+
+.footer a{
+    color: #fff;
+}
+
+@media (max-width: 720px){
+    .navbar{
+        height: auto;
+        flex-direction: column;
+    }
+
+    .navbar ul{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo{
+        margin-bottom: 10px;
+    }
+
+    .navbar ul li{
+        margin-bottom: 5px;
+    }
+
+    .banner_content{
+        margin-top: 35px;
+    }
+}
+
+/* arrow */
+.arrow{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    background: tomato;
+    border-radius: 50%;
+}
+
+.arrow img{
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+}
